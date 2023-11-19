@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NYC From Memory (DIGITAL 201 — The Rhetoric of Mapping)</title>
+    <style>
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+
+        font-size: 16px;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+          Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+          sans-serif;
+      }
+
+      figure {
+        margin: 1rem;
+        display: grid;
+        gap: 0.75rem;
+      }
+
+      hgroup,
+      figcaption {
+        display: grid;
+        gap: 0.25rem;
+      }
+
+      h1,
+      p {
+        margin: 0;
+        text-wrap: balance;
+      }
+
+      .circle {
+        width: 16px;
+        aspect-ratio: 1 / 1;
+        background-color: var(--circle-background);
+        border-radius: 50%;
+        display: inline-block;
+
+        vertical-align: text-top;
+      }
+
+      figcaption {
+        font-size: 0.85rem;
+      }
+    </style>
+  </head>
+  <body>
+    <figure>
+      <hgroup>
+        <h1>My recollection of New York City</h1>
+        <div>
+          <p>
+            A purple circle
+            <span class="circle" style="--circle-background: #7570b3"></span>
+            represent where I <i>remembered</i> a place was, without any frame
+            of reference*.
+          </p>
+          <p>
+            A green circle
+            <span class="circle" style="--circle-background: #1b9e77"></span>
+            represent the <i>actual</i> location of the place.
+          </p>
+        </div>
+      </hgroup>
+      <iframe
+        width="100%"
+        height="400px"
+        src="https://api.mapbox.com/styles/v1/ericlau/clp56p6if010r01pe5o8cdt44.html?title=false&access_token=pk.eyJ1IjoiZXJpY2xhdSIsImEiOiJjbDYwazk0NGsxYmRnM2NxaHlrejR6b2c0In0.XtIfqcL3OqoA-OheslQ4ig&zoomwheel=false#9.76/40.6468/-74.0546"
+        title="DIGITAL 201 — NYC"
+        style="border: none"
+      ></iframe>
+      <figcaption>
+        <p>
+          * I attempted to pin places using the same map style as shown: without
+          street names or building names.
+        </p>
+        <p>By Eric Lau for DIGITAL 201 (The Rhetoric of Mapping)</p>
+      </figcaption>
+    </figure>
+  </body>
+</html>
